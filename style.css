@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 10px;
+    display: grid;
+    gap: 5px;
+    grid-auto-rows:minmax(100px , auto) ;
+    background-color:whitesmoke;
+    grid-template-columns:3fr 2fr 3fr;
+    /* border: 2px solid white; */
+    justify-content: center;
+
+}
+.item{
+    /* border: 2px solid white ; */
+    padding: 20px;
+    margin-top: 10em;
+    
+
+}
+.container .item:nth-of-type(1){
+    background-color: #fce7c8;
+    width: 60%;
+    height: 21em;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    margin-left: 1em;
+
+}
+.container .item:nth-of-type(2){
+    background-color:#8b5cf6;
+    width: 190%;
+    height:15em ;
+    margin-left:-7em ; 
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1)   
+}
+.container .item:nth-of-type(3){
+    background-color: #e9d5ff;
+    width: 65%;
+    height: 30em;
+    margin-left: 7em;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1)   
+}
+.container .item:nth-of-type(4){
+    background-color: #facc15;
+    width: 60%;
+    height: 23em;
+    margin-top: -8em;
+    margin-left: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1)
+    
+}
+.container .item:nth-of-type(5){
+    background-color: #fff;
+    width:87% ;
+    margin-left:-7em;
+    margin-top: -14em;
+    height: 13.7em;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1)
+}
+.container .item:nth-of-type(6){
+    background-color: #fbbf24;
+    width:60% ;
+    margin-left: -7.5em;
+    margin-top: -14em;
+    height:13.7em ;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1)
+
+
+}
+
+.container .item:nth-of-type(7){
+    background-color: #fff;
+    width: 58%;
+    height: 13.7em;
+
+    margin-left: 15em;
+    margin-top: -14em;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1)
+}
+.container .item:nth-of-type(8){
+    background-color: #7c3aed;
+    margin-left: 7em;
+    width: 200%;
+    margin-top: -14em;
+    height: 13.7em;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1)
+}
+@media screen and (max-width:900px) {
+    body{
+        display: none;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:600px) {
+     body{
+        display: none;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
